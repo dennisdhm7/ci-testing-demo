@@ -1,0 +1,11 @@
+stages:
+  - test
+
+unit_tests:
+  stage: test
+  script:
+    - npm install
+    - npm test -- --coverage
+  artifacts:
+    paths:
+      - coverage/
