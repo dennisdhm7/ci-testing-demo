@@ -15,6 +15,9 @@ jobs:
       - name: Install packages
         run: npm install
 
+      - name: Install Jest manually
+        run: npm install jest --save-dev
+
       - name: Run tests
         run: npx jest --runInBand --coverage
 
